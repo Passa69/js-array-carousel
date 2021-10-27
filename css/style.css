@@ -23,12 +23,14 @@
     float: right;
     position: relative;
     width: 77%;
+    height: 380px;
     display: none;
 }
 
 /* contenuti */
 .item > img {
     width: 100%;
+    height: 100%;
 }
 
 .text {
@@ -69,8 +71,5 @@
 /* attivazione immagini */
 .active {
     display: block;
-}
-
-.activeth {
     border: 2px solid white;
 }

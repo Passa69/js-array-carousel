@@ -26,6 +26,7 @@ const text = [
 // creare i contenuti delle macroaree utilizzando gli array
 const itemsCont = document.querySelector(".items");
 const thumbsCont = document.querySelector(".thumbs");
+// const next = document.querySelector(".next");
 
 let item = "";
 let thumbs = "";
@@ -51,4 +52,21 @@ itemsCont.innerHTML = item;
 document.getElementsByClassName("item")[0].classList.add("active");
 
 thumbsCont.innerHTML += thumbs;
-document.getElementsByClassName("thumb")[0].classList.add("activeth");
+document.getElementsByClassName("thumb")[0].classList.add("active");
+
+// aggiunta click next
+let activePosition = 0;
+
+document.querySelector(".next").addEventListener(`click`, 
+    function() {
+
+        activePosition = activePosition + 1;
+
+        document.querySelector(".item.active").classList.remove("active");
+        document.getElementsByClassName("item")[activePosition].classList.add("active");
+
+        document.querySelector(".thumb.active").classList.remove("active");
+        document.getElementsByClassName("thumb")[activePosition].classList.add("active");
+    }
+
+);

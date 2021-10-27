@@ -27,6 +27,7 @@ const text = [
 const itemsCont = document.querySelector(".items");
 const thumbsCont = document.querySelector(".thumbs");
 // const next = document.querySelector(".next");
+// const prev = document.querySelector(".prev");
 
 let item = "";
 let thumbs = "";
@@ -67,6 +68,23 @@ document.querySelector(".next").addEventListener(`click`,
 
         document.querySelector(".thumb.active").classList.remove("active");
         document.getElementsByClassName("thumb")[activePosition].classList.add("active");
+    }
+
+);
+
+// aggiunta click prev
+let activePositions = 4;
+
+document.querySelector(".prev").addEventListener(`click`, 
+    function() {
+
+        activePositions = activePositions - 1;
+
+        document.querySelector(".item.active").classList.remove("active");
+        document.getElementsByClassName("item")[activePositions].classList.add("active");
+
+        document.querySelector(".thumb.active").classList.remove("active");
+        document.getElementsByClassName("thumb")[activePositions].classList.add("active");
     }
 
 );

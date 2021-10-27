@@ -41,6 +41,7 @@
 }
 
 .thumbs {
+    position: relative;
     float: right;
     width: 15%;
     margin-bottom: 0;
@@ -49,6 +50,14 @@
 /* contenuti */
 .thumb > img {
     width: 100%;
+}
+
+.prev {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 999;
 }
 
 /* attivazione immagini */

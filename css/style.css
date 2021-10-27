@@ -67,10 +67,10 @@
 }
 
 /* attivazione immagini */
-.item.active {
+.active {
     display: block;
 }
 
-.thumb.active {
+.activeth {
     border: 2px solid white;
 }

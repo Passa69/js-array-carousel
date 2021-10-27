@@ -38,7 +38,7 @@ for (let i=0; i < items.length; i++) {
     </div>`;
 
     item += 
-    `<div class="item active">
+    `<div class="item">
         <img src="${items[i]}" alt="${title[i]}">
         <div class="text">
             <h3>${title[i]}</h3>
@@ -48,4 +48,7 @@ for (let i=0; i < items.length; i++) {
 }
 
 itemsCont.innerHTML = item;
-thumbsCont.innerHTML = thumbs;
+document.getElementsByClassName("item")[0].classList.add("active");
+
+thumbsCont.innerHTML += thumbs;
+document.getElementsByClassName("thumb")[0].classList.add("activeth");

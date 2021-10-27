@@ -14,12 +14,16 @@
 
 .container {
     margin: 10% 10%;
+    padding: 20px;
+    background-color: black;
 }
+
 
 .item {
     float: right;
     position: relative;
     width: 77%;
+    display: none;
 }
 
 /* contenuti */
@@ -45,4 +49,13 @@
 /* contenuti */
 .thumb > img {
     width: 100%;
+}
+
+/* attivazione immagini */
+.item.active {
+    display: block;
+}
+
+.thumb.active {
+    border: 2px solid white;
 }

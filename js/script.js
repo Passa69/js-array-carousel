@@ -1,3 +1,16 @@
+// Consegna: Dati tre array contenenti: - una lista ordinata di 5 immagini, - una lista ordinata dei relativi 5 luoghi e - una lista di 5 news, creare un carosello come nella foto allegata.
+// Al click dell’utente sulle frecce verso l’alto o verso il basso, l’immagine attiva diventa visibile in formato grande a sinistra e nel suo angolo in basso a destra dovranno essere aggiunti i relativi - titolo e - testo.
+// Allo stesso tempo nelle miniature l’immagine attiva dovrà apparire in evidenza rispetto alle altre.
+// ...
+// 1. creare html e css OK
+// 2. aggiungere uno per volta gli elementi => for OK
+// 3. stampare su pagina solo il primo elemento grande e selezionare solo uno di quelli piccoli OK
+// 4. aggiungere i click alle frecce OK
+    // 4.1 creare una variabile per il conteggio degli elementi OK
+    // 4.2 aggiungere la funzine click con la variabile precedente OK
+    // 4.3 ripetere gli stessi passaggi per il senso opposto ??
+
+
 // array
 const items = [
     'img/01.jpg',

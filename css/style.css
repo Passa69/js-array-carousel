@@ -4,3 +4,46 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* macro */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    margin: 10% 20%;
+}
+
+.item {
+    float: right;
+    position: relative;
+    width: 80%;
+}
+
+/* contenuti */
+.item > img {
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    font-size: 13px;
+    text-align: right;
+    color: white;
+}
+
+.thumbs {
+    float: right;
+    width: 20%;
+}
+
+/* contenuti */
+.thumb > img {
+    width: 100%;
+    height: 100%;
+}

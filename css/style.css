@@ -13,19 +13,18 @@
 }
 
 .container {
-    margin: 10% 20%;
+    margin: 10% 10%;
 }
 
 .item {
     float: right;
     position: relative;
-    width: 80%;
+    width: 77%;
 }
 
 /* contenuti */
 .item > img {
     width: 100%;
-    height: 100%;
 }
 
 .text {
@@ -39,11 +38,11 @@
 
 .thumbs {
     float: right;
-    width: 20%;
+    width: 15%;
+    margin-bottom: 0;
 }
 
 /* contenuti */
 .thumb > img {
     width: 100%;
-    height: 100%;
 }

@@ -68,13 +68,19 @@ document.getElementsByClassName("item")[0].classList.add("active");
 thumbsCont.innerHTML += thumbs;
 document.getElementsByClassName("thumb")[0].classList.add("active");
 
-// aggiunta click next
 let activePosition = 0;
 
+// aggiunta click next
 document.querySelector(".next").addEventListener(`click`, 
     function() {
 
-        activePosition = activePosition + 1;
+        // se non sono alla fine
+        if (activePosition < items.length - 1) {
+            activePosition = activePosition + 1;
+        } else { 
+            // alla fine resetto l'indice
+            activePosition = 0;
+        }
 
         document.querySelector(".item.active").classList.remove("active");
         document.getElementsByClassName("item")[activePosition].classList.add("active");
@@ -86,18 +92,23 @@ document.querySelector(".next").addEventListener(`click`,
 );
 
 // aggiunta click prev
-let activePositions = 4;
-
 document.querySelector(".prev").addEventListener(`click`, 
     function() {
 
-        activePositions = activePositions - 1;
+        // se indice è 0
+        if (activePosition === 0) {
+            // torno all'ultimo elemento
+            activePosition = items.length - 1;
+        } else { 
+            // se no
+            activePosition = activePosition - 1;
+        }
 
         document.querySelector(".item.active").classList.remove("active");
-        document.getElementsByClassName("item")[activePositions].classList.add("active");
-        
-        document.querySelector(".thumb.active").classList.remove("active");   
-        document.getElementsByClassName("thumb")[activePositions].classList.add("active");
+        document.getElementsByClassName("item")[activePosition].classList.add("active");
+
+        document.querySelector(".thumb.active").classList.remove("active");
+        document.getElementsByClassName("thumb")[activePosition].classList.add("active");
     }
 
 );

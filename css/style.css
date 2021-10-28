@@ -23,7 +23,7 @@
     float: right;
     position: relative;
     width: 77%;
-    height: 380px;
+    height: 450px;
     display: none;
 }
 
@@ -50,8 +50,13 @@
 }
 
 /* contenuti */
+.thumb {
+    height: 85px;
+}
+
 .thumb > img {
     width: 100%;
+    height: 100%;
 }
 
 .prev {

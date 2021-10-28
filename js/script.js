@@ -95,8 +95,8 @@ document.querySelector(".prev").addEventListener(`click`,
 
         document.querySelector(".item.active").classList.remove("active");
         document.getElementsByClassName("item")[activePositions].classList.add("active");
-
-        document.querySelector(".thumb.active").classList.remove("active");
+        
+        document.querySelector(".thumb.active").classList.remove("active");   
         document.getElementsByClassName("thumb")[activePositions].classList.add("active");
     }
 
